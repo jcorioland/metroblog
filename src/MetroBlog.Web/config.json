@@ -1,0 +1,12 @@
+﻿{
+    "Data": {
+        "DefaultConnection": {
+            "ConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=_CHANGE_ME;Trusted_Connection=True;"
+        },
+        "DocumentDB": {
+            "EndpointUrl": "https://aspnetvnextblog.documents.azure.com:443/",
+            "AuthorizationKey": "WYx/OWfZmCAS87RuI91BT82nF89ZSazo7QmVVJZFmP6QFg8FAwj9dSaSNAxBvMfZP/rhxZGLYCGJBnzkmEI6uQ==",
+            "DatabaseId":  "MetroBlogDatabase"
+        }
+    }
+}

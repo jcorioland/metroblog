@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Julien Corioland's Blog</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+    <script type="text/javascript">
+        (function() {
+            if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement("style");
+                msViewportStyle.appendChild(
+                    document.createTextNode("@@-ms-viewport{width:auto!important}")
+                );
+                document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="navbar-brand">@Html.ActionLink("Julien Corioland's Blog", "Index", "Post", null, new { title = "Back to home" })</span>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div class="jumbotron">
+            @RenderSection("jumbotron")
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                @RenderBody()
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 right-column">
+                <h3>Tags</h3>
+                <hr class="separator" />
+
+                <h3>Twitter</h3>
+                <hr class="separator" />
+
+            </div>
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Julien Corioland - This website runs on Microsoft Azure - Opinions are my own.</p>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="~/Content/Scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="~/Content/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/Content/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript" src="~/Content/Scripts/bootstrap.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

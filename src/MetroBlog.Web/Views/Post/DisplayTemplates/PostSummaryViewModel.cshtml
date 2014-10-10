@@ -1,0 +1,16 @@
+﻿@model MetroBlog.Web.ViewModels.PostSummaryViewModel
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3>@Html.ActionLink(Model.Title, "details", "post", new { permalink = Model.Permalink }, null)</h3>
+        <p style="font-style:italic">@Model.PublishDate.ToShortDateString() UTC - <a href="@string.Format("http://www.juliencorioland.net{0}", Url.Action("details", "post", new { permalink = Model.Permalink }))#disqus_thread"></a></p>
+        <p class="post-summary">@Html.Raw(Model.Summary)</p>
+        <ul class="post-summary-tags">
+            @foreach (var tag in Model.Tags)
+            {
+                <li>@Html.ActionLink(tag, "tags", "post", new { tag = tag.ToLowerInvariant() }, new { @class = "btn btn-primary" })</li>
+            }
+        </ul>
+        <hr />
+    </div>
+</div>

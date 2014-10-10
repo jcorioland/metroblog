@@ -1,0 +1,12 @@
+﻿{
+    "dependencies": {
+        "Microsoft.Azure.Documents.Client": "0.9.0-preview"
+    },
+
+    "frameworks": {
+        "net451": {
+            "dependencies": {
+            }
+        }
+    }
+}

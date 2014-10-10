@@ -1,0 +1,16 @@
+﻿{
+    "dependencies": {
+        "Microsoft.AspNet.Server.IIS": "1.0.0-alpha3",
+        "Microsoft.Azure.Documents.Client": "0.9.0-preview",
+        "Microsoft.AspNet.Mvc": "6.0.0-alpha3",
+        "Microsoft.AspNet.Routing": "1.0.0-alpha3",
+        "MetroBlog.Domain": ""
+    },
+    "frameworks": {
+        "net451": {
+            "dependencies": { 
+                
+            }
+        }
+    }
+}

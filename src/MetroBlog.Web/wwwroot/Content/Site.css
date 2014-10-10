@@ -1,0 +1,164 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.post-container{
+    text-align:justify;
+}
+
+.post-icon{
+    width:24px;
+    height:auto;
+}
+
+.right-column{
+    padding-left:30px;
+}
+
+hr.separator {
+    border-color:#2D5982;
+    border-width:medium;
+    margin-top:2px;
+}
+
+a{
+    color:#2D5982;
+    font-weight:bold;
+}
+
+.post-summary{
+    text-align:justify;
+}
+
+.tag-list{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+.tweet .legend{
+    font-style:italic;
+    margin-top:-10px;
+    color:gray
+}
+
+.post-summary-tags{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.post-summary-tags li{
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+/* bootstrap overrides */
+
+.navbar-inverse {
+    background-color: #2D5982;
+    border-color: #000;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-brand a,
+.navbar-inverse .navbar-brand a:hover,
+.navbar-inverse .navbar-brand a:visited
+{
+    color: #FFFFFF;
+    text-decoration:none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a.selected {
+    background-color:whitesmoke;
+    color:#2D5982;
+}
+
+.jumbotron {
+    margin-top:-20px;
+    background-color:whitesmoke;
+    border:1px solid #2D5982;
+    padding:10px;
+    padding-top:20px;
+}
+
+.jumbotron h2{
+    font-size:32px;
+}
+
+.jumbotron p {
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.container{
+    max-width:1360px;
+}
+
+.btn-primary {
+    background-color: #2D5982;
+    border-color: #2D5982;
+    color: #FFFFFF;
+}
+
+.blog-searchBox{
+    height:30px; 
+    margin-top:10px; 
+    margin-left:15px;
+    margin-right:0;
+}
+
+.btn-submit-search{
+    height:30px; 
+    margin-top:10px;
+    margin-left:-10px;
+}
