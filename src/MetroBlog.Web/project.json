@@ -1,0 +1,14 @@
+﻿{
+    "webroot" : "wwwroot",
+    "exclude": "wwwroot/**/*.*",
+    "dependencies": {
+        "Microsoft.AspNet.Server.IIS": "1.0.0-alpha4",
+        "Microsoft.AspNet.Mvc": "6.0.0-alpha4",
+        "Microsoft.AspNet.Routing": "1.0.0-alpha4",
+        "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-alpha4",
+        "MetroBlog.Domain": ""
+    },
+    "frameworks" : {
+        "aspnet50": { }
+    }
+}
