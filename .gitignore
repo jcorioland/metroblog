@@ -9,3 +9,4 @@ obj/
 MetroBlog.vNext.sln.ide/
 *.suo
 *.user
+src/MetroBlog.Web/config.json
